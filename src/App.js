@@ -28,23 +28,23 @@ const onAddressChanged = (address) => {
 };
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Unity unityContext={unityContext} />
-      </header>
-    </div>
-  );
-
   // return (
   //   <div className="App">
   //     <header className="App-header">
-  //       <MetaMaskAuth
-  //         onAddressChanged={onAddressChanged}
-  //       />
+  //       <Unity unityContext={unityContext} />
   //     </header>
   //   </div>
   // );
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <MetaMaskAuth
+          onAddressChanged={onAddressChanged}
+        />
+      </header>
+    </div>
+  );
 }
 
 export default App;
